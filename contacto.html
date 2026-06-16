@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - TuxNoticias</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="Logo" width="30" class="d-inline-block align-text-top">
+                    TuxNoticias
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-5 fade-in">
+        <section class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card shadow-sm border-0">
+                    <div class="card-header bg-dark text-white text-center py-3">
+                        <h3 class="mb-0">Formulario de Contacto</h3>
+                    </div>
+                    <div class="card-body p-4 bg-light">
+                        <form id="formContacto" novalidate>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label fw-bold">Nombre Completo</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Ej. Linus Torvalds">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold">Correo Electrónico <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="email" placeholder="ejemplo@linux.org" required>
+                                <div id="emailError" class="invalid-feedback">Ingresa un correo válido (requiere @).</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label fw-bold">Mensaje <span class="text-danger">*</span></label>
+                                <textarea class="form-control" id="mensaje" rows="4" placeholder="Reporte de error o sugerencia..." required></textarea>
+                                <div id="mensajeError" class="invalid-feedback">El mensaje no puede estar vacío.</div>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Enviar Solicitud</button>
+                        </form>
+                        <div id="alertaExito" class="alert alert-success mt-3 d-none" role="alert">
+                            ¡Mensaje enviado correctamente!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2026 TuxNoticias - Desarrollo Web Frontend Avanzado (UMSA)</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

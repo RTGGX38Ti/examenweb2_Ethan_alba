@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuxNoticias - Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="Logo" width="30" class="d-inline-block align-text-top">
+                    TuxNoticias
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <section id="carruselPrincipal" class="carousel slide mb-5 shadow-sm rounded" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carruselPrincipal" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carruselPrincipal" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carruselPrincipal" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <img src="img/distros.jpg" class="d-block w-100" alt="Slide 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Actualización Estable</h5>
+                        <p>Nuevos paquetes disponibles para la comunidad.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/distros2.jpg" class="d-block w-100" alt="Slide 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Que distro te llama la atencion</h5>
+                        <p>Las distros mas populares del 2026</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/aur.webp" class="d-block w-100" alt="Slide 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>AUR como gestor de paquetes de Arch</h5>
+                        <p>Repositorios dados por la comunidad mas grande</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselPrincipal" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselPrincipal" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </section>
+
+        <section class="row g-4">
+            <h2 class="text-center mb-4">Destacados</h2>
+            <article class="col-12 col-md-4">
+                <div class="card h-100 card-animada shadow-sm">
+                    <img src="img/aur.webp" class="card-img-top img-uniforme" alt="Terminal">
+                    <div class="card-body">
+                        <h5 class="card-title">Gestión de Paquetes</h5>
+                        <p class="card-text">Optimizando Arch Linux para desarrollo intensivo.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-12 col-md-4">
+                <div class="card h-100 card-animada shadow-sm">
+                    <img src="img/gson.jpg" class="card-img-top img-uniforme" alt="Código Java">
+                    <div class="card-body">
+                        <h5 class="card-title">Persistencia con Gson</h5>
+                        <p class="card-text">Manejo eficiente de entidades mediante archivos JSON en Java.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-12 col-md-4">
+                <div class="card h-100 card-animada shadow-sm">
+                    <img src="img/ml.jpg" class="card-img-top img-uniforme" alt="Data Science">
+                    <div class="card-body">
+                        <h5 class="card-title">Machine Learning</h5>
+                        <p class="card-text">La evolución de los roles en ingeniería de datos.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2026 TuxNoticias - Desarrollo Web Frontend Avanzado (UMSA)</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
